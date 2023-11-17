@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondorayo"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_IniciarSesion"
+        android:layout_width="212dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#00B8D4"
+        android:fontFamily="sans-serif-black"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_RegistrarUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.984"
+        app:strokeColor="#F44336" />
+
+    <Button
+        android:id="@+id/btn_RegistrarUser"
+        android:layout_width="199dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="118dp"
+        android:backgroundTint="#00B8D4"
+        android:fontFamily="sans-serif-black"
+        android:text="Registarme"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="315dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="269dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_RegistrarUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logoa" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="143dp"
+        android:layout_height="554dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_RegistrarUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/faro" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="141dp"
+        android:layout_height="528dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="99dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_RegistrarUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/faro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

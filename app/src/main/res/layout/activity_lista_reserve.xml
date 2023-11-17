@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonll"
+    tools:context=".ListReserve">
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="73dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_Insertar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Insertar"
+        android:layout_width="264dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="71dp"
+        android:backgroundTint="#64DD17"
+        android:text="Reservar"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lista" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaa"
+    tools:context=".Reservar">
+
+    <ImageView
+        android:id="@+id/salir7"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_close_24" />
+
+    <EditText
+        android:id="@+id/txte_NomApellido"
+        android:layout_width="328dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="435dp"
+        android:ems="10"
+        android:hint="Nombre y Apellido"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:background="#BE91DD17"
+        android:text="Nombre y Apellido"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/txte_NomApellido"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BE91DD17"
+        android:text="Telefono"
+
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="#BE91DD17"
+        android:text="Seleccione Hora:"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <CheckBox
+        android:id="@+id/checkB_10am"
+        android:layout_width="111dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="#00B8D4"
+        android:text="10:00 am"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/checkB_15pm"
+        android:layout_width="111dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00B8D4"
+        android:text="15:00 pm"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <CheckBox
+        android:id="@+id/checkB_12pm"
+        android:layout_width="106dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="38dp"
+        android:background="#00B8D4"
+        android:text="12:00 pm"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ReservaHora"
+        app:layout_constraintEnd_toEndOf="@+id/checkB_10am" />
+
+    <CheckBox
+        android:id="@+id/checkB_18pm"
+        android:layout_width="105dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:background="#00B8D4"
+        android:text="18:00 pm"
+        app:layout_constraintEnd_toEndOf="@+id/checkB_15pm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkB_15pm"
+        app:layout_constraintTop_toBottomOf="@+id/checkB_15pm" />
+
+    <Button
+        android:id="@+id/btn_ReservaHora"
+        android:layout_width="192dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#81C784"
+        android:text="Reservar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkB_18pm" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/txte_NomApellido"
+        app:layout_constraintEnd_toStartOf="@+id/salir7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logoa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
